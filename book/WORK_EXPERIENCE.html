@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Work Experience - Juan Carlos Flores | Staff Software Engineer</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="RESUME.html"><strong aria-hidden="true">1.</strong> Resume</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="WORK_EXPERIENCE.html" class="active"><strong aria-hidden="true">1.1.</strong> Work Experience</a></li><li class="chapter-item expanded "><a href="SKILLS.html"><strong aria-hidden="true">1.2.</strong> Skills</a></li><li class="chapter-item expanded "><a href="PROJECTS.html"><strong aria-hidden="true">1.3.</strong> Projects</a></li><li class="chapter-item expanded "><a href="CERTIFICATIONS.html"><strong aria-hidden="true">1.4.</strong> Certifications</a></li><li class="chapter-item expanded "><a href="LANGUAGES.html"><strong aria-hidden="true">1.5.</strong> Languages</a></li><li class="chapter-item expanded "><a href="INTERESTS.html"><strong aria-hidden="true">1.6.</strong> Interests</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Juan Carlos Flores | Staff Software Engineer</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
+<p>This section outlines the professional experience I have gained throughout my career. I will try to highlight the most relevant aspects, given that my professional journey started when I was 18 years old and I've been through several stages of professional growth. I will omit the Junior Developer roles (Nov 2011 to Feb 2018) from the early days of my career, but feel free to ask if you'd like to know more about my background.</p>
+<h2 id="staff-software-engineer"><a class="header" href="#staff-software-engineer">Staff Software Engineer</a></h2>
+<p><strong>Yalo</strong> · Nov 2020 - Present · 5 yrs 5 mos
+My current and most impactful journey so far. At Yalo, I've had the opportunity to develop myself in various aspects, both technical and non-technical, which have allowed me to grow as a professional and as a person. I have developed complex, resilient, event-driven infrastructure using Kafka as a highly fault-tolerant event engine, and evolved the logic of how events are processed within the company. I've led initiatives to migrate from monoliths to microservices, implemented modern design patterns, and participated in defining the overall software architecture. This has brought tangible business benefits such as increased efficiency, significant cost reduction, and the viability to attract and scale with new clients in the future.</p>
+<p><strong>Used technologies:</strong></p>
+<ul>
+<li>Golang</li>
+<li>Kafka</li>
+<li>Python</li>
+<li>Google Cloud Stack</li>
+<li>Docker</li>
+<li>Git</li>
+<li>Datadog</li>
+<li>Prometheus</li>
+<li>AI Implementations with OpenAI</li>
+<li>Just to mention a few...</li>
+</ul>
+<h2 id="senior-full-stack-developer"><a class="header" href="#senior-full-stack-developer">Senior Full-stack Developer</a></h2>
+<p><strong>Cartful Solutions</strong> · Jun 2019 - Nov 2020 · 1 yr 6 mos
+I was in charge of developing new features. Cartful offers custom search engines for e-commerce companies. I developed an information ingestion system for the search engine, which allowed processing and storing data from various sources into a NoSQL database. This information was then used by the search engine to provide both static and dynamic recommendations based on scoring/popularity and business rules.</p>
+<p><strong>Technologies used:</strong></p>
+<ul>
+<li>AWS cloud platform (S3, DynamoDB, Lambdas, Step Functions, CloudWatch Events)</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Java</li>
+<li>Just to mention a few...</li>
+</ul>
+<h2 id="senior-software-developer"><a class="header" href="#senior-software-developer">Senior Software Developer</a></h2>
+<p><strong>Ubiquo Labs</strong> · Feb 2018 - Jun 2019 · 1 yr 5 mos
+In charge of maintaining and developing the company's internal platform, which is used by companies like TIGO Guatemala, TIGO Honduras, Claro Central America, banks, and other clients. I developed several services in Python and Java, implemented modern design patterns, and participated in defining the overall software architecture. I also created new Java implementations using Spring Boot to build microservices that simplified development. Managed a small team of around 3 junior developers.</p>
+<p><strong>Used technologies:</strong> </p>
+<ul>
+<li>Python</li>
+<li>React JS</li>
+<li>Java / Spring Boot</li>
+<li>Node.js</li>
+<li>Scrum</li>
+<li>AWS (VPC, EC2, SES, Lambda)</li>
+<li>Just to mention a few...</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="RESUME.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="SKILLS.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="RESUME.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="SKILLS.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

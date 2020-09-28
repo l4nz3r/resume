@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Juan Carlos Flores | Staff Software Engineer</title>
+        <meta name="robots" content="noindex" />
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="RESUME.html"><strong aria-hidden="true">1.</strong> Resume</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="WORK_EXPERIENCE.html"><strong aria-hidden="true">1.1.</strong> Work Experience</a></li><li class="chapter-item expanded "><a href="SKILLS.html"><strong aria-hidden="true">1.2.</strong> Skills</a></li><li class="chapter-item expanded "><a href="PROJECTS.html"><strong aria-hidden="true">1.3.</strong> Projects</a></li><li class="chapter-item expanded "><a href="CERTIFICATIONS.html"><strong aria-hidden="true">1.4.</strong> Certifications</a></li><li class="chapter-item expanded "><a href="LANGUAGES.html"><strong aria-hidden="true">1.5.</strong> Languages</a></li><li class="chapter-item expanded "><a href="INTERESTS.html"><strong aria-hidden="true">1.6.</strong> Interests</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Juan Carlos Flores | Staff Software Engineer</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
+<ul>
+<li>Preferred contact: <a href="https://www.linkedin.com/in/juan-carlos-flores-barco-151a194b/">LinkedIn</a></li>
+<li>Staff Archetype: <a href="https://staffeng.com/guides/staff-archetypes/">Right Hand</a></li>
+</ul>
+<p>I am a Staff Software Engineer with over 15 years of experience in software development. I specialize in building highly resilient, fault-tolerant, and scalable microservices-oriented infrastructure. I have worked on various projects across different industries, including e-commerce, conversational commerce, telecommunications, and finance.</p>
+<p>I enjoy working in challenging environments where I can apply my knowledge and skills to solve complex problems. I am also passionate about learning new technologies and applying them to my projects.</p>
+<p>On a personal level, I am proactive, responsible, a strong team player, and highly results-oriented. My hobbies include mountain biking, traveling, and spending time with my family. I am a proud father and husband.</p>
+<h2 id="how-to-navigate"><a class="header" href="#how-to-navigate">How To Navigate:</a></h2>
+<p>This site is built with <a href="https://github.com/rust-lang/mdBook">mdBook</a>. Here is a quick guide on how to navigate it:</p>
+<ul>
+<li>Use the keyboard arrows to navigate through the sections sequentially.</li>
+<li>Use the left menu to jump straight into specific chapters of interest.</li>
+<li>Use the print button to export or save the document as a PDF.</li>
+</ul>
+<hr />
+<p><a href="https://www.linkedin.com/in/juan-carlos-flores-barco-151a194b/">LinkedIn</a> | <a href="https://github.com/l4nz3r">GitHub</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="overview-1"><a class="header" href="#overview-1">Overview</a></h1>
+<p>This section outlines the professional experience I have gained throughout my career. I will try to highlight the most relevant aspects, given that my professional journey started when I was 18 years old and I've been through several stages of professional growth. I will omit the Junior Developer roles (Nov 2011 to Feb 2018) from the early days of my career, but feel free to ask if you'd like to know more about my background.</p>
+<h2 id="staff-software-engineer"><a class="header" href="#staff-software-engineer">Staff Software Engineer</a></h2>
+<p><strong>Yalo</strong> · Nov 2020 - Present · 5 yrs 5 mos
+My current and most impactful journey so far. At Yalo, I've had the opportunity to develop myself in various aspects, both technical and non-technical, which have allowed me to grow as a professional and as a person. I have developed complex, resilient, event-driven infrastructure using Kafka as a highly fault-tolerant event engine, and evolved the logic of how events are processed within the company. I've led initiatives to migrate from monoliths to microservices, implemented modern design patterns, and participated in defining the overall software architecture. This has brought tangible business benefits such as increased efficiency, significant cost reduction, and the viability to attract and scale with new clients in the future.</p>
+<p><strong>Used technologies:</strong></p>
+<ul>
+<li>Golang</li>
+<li>Kafka</li>
+<li>Python</li>
+<li>Google Cloud Stack</li>
+<li>Docker</li>
+<li>Git</li>
+<li>Datadog</li>
+<li>Prometheus</li>
+<li>AI Implementations with OpenAI</li>
+<li>Just to mention a few...</li>
+</ul>
+<h2 id="senior-full-stack-developer"><a class="header" href="#senior-full-stack-developer">Senior Full-stack Developer</a></h2>
+<p><strong>Cartful Solutions</strong> · Jun 2019 - Nov 2020 · 1 yr 6 mos
+I was in charge of developing new features. Cartful offers custom search engines for e-commerce companies. I developed an information ingestion system for the search engine, which allowed processing and storing data from various sources into a NoSQL database. This information was then used by the search engine to provide both static and dynamic recommendations based on scoring/popularity and business rules.</p>
+<p><strong>Technologies used:</strong></p>
+<ul>
+<li>AWS cloud platform (S3, DynamoDB, Lambdas, Step Functions, CloudWatch Events)</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Java</li>
+<li>Just to mention a few...</li>
+</ul>
+<h2 id="senior-software-developer"><a class="header" href="#senior-software-developer">Senior Software Developer</a></h2>
+<p><strong>Ubiquo Labs</strong> · Feb 2018 - Jun 2019 · 1 yr 5 mos
+In charge of maintaining and developing the company's internal platform, which is used by companies like TIGO Guatemala, TIGO Honduras, Claro Central America, banks, and other clients. I developed several services in Python and Java, implemented modern design patterns, and participated in defining the overall software architecture. I also created new Java implementations using Spring Boot to build microservices that simplified development. Managed a small team of around 3 junior developers.</p>
+<p><strong>Used technologies:</strong> </p>
+<ul>
+<li>Python</li>
+<li>React JS</li>
+<li>Java / Spring Boot</li>
+<li>Node.js</li>
+<li>Scrum</li>
+<li>AWS (VPC, EC2, SES, Lambda)</li>
+<li>Just to mention a few...</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="skills"><a class="header" href="#skills">Skills</a></h1>
+<p>Throughout my career, I've had the opportunity to collaborate on various projects, which allowed me to develop my skills in multiple areas. It has been a journey of continuous learning, giving me the chance to constantly improve both the technical and non-technical skills I possess. I have certainly leaned more towards a technical path because it's what I'm most passionate about, but I've also successfully taken on leadership and team management roles. These roles have helped me develop soft skills that are just as crucial for a project's success.</p>
+<p>In this section, you'll find a breakdown of the technical, non-technical, and interpersonal skills I have developed and honed throughout my professional career.</p>
+<h2 id="applied-ai"><a class="header" href="#applied-ai">Applied AI</a></h2>
+<pre><code>(OpenAI) OpenAI           |..............................
+(Google) Google           |..........................
+--------------------------|-----------------------------------------
+Proficiency               0        25        50        75        100
+</code></pre>
+<h2 id="languages"><a class="header" href="#languages">Languages</a></h2>
+<pre><code>Go           |......................................
+Python       |..................................
+JavaScript   |..............................
+TypeScript   |.........................
+Java         |...............
+Swift        |...............
+Bash         |....................
+HTML         |...............................
+CSS          |...............................
+-------------|-----------------------------------------
+Proficiency  0        25        50        75        100
+</code></pre>
+<h2 id="cloud"><a class="header" href="#cloud">Cloud</a></h2>
+<pre><code>(AWS) AWS                 |................................
+(GCP) GCP                 |......................................
+(Azure) Azure             |................
+--------------------------|-----------------------------------------
+Proficiency               0        25        50        75        100
+</code></pre>
+<h2 id="databases"><a class="header" href="#databases">Databases</a></h2>
+<pre><code>(PostgreSQL) PostgreSQL   |................................
+(MySQL) MySQL             |...................................
+(MongoDB) MongoDB         |......................................
+(Redis) Redis             |......................................
+--------------------------|-----------------------------------------
+Proficiency               0        25        50        75        100
+</code></pre>
+<h2 id="frameworks"><a class="header" href="#frameworks">Frameworks</a></h2>
+<pre><code>(JavaScript) React     |...............................
+(JavaScript) Angular   |.....................
+(Node.js) Express.js   |...............................
+(Python) FastAPI       |..................................
+(Python) Django        |.....................
+(Python) Flask         |.....................
+(Go) Gin               |....................................
+-----------------------|-----------------------------------------
+Proficiency            0        25        50        75        100
+</code></pre>
+<h2 id="tools"><a class="header" href="#tools">Tools</a></h2>
+<pre><code>(Docker) Docker           |......................................
+(Kubernetes) Kubernetes   |..................................
+(Git) Git                 |......................................
+Line                      |................................
+Jira                      |......................................
+--------------------------|-----------------------------------------
+Proficiency               0        25        50        75        100
+</code></pre>
+<hr />
+<div style="break-before: page; page-break-before: always;"></div><h1 id="projects"><a class="header" href="#projects">Projects</a></h1>
+<h2 id="to-be-defined-"><a class="header" href="#to-be-defined-">To be defined ....</a></h2>
+<hr />
+<p>I will leave this section pending so we can discuss the projects I have worked on in the future, or if you are curious, we can talk about them during an interview.</p>
+<p><a href="https://www.linkedin.com/in/juan-carlos-flores-barco-151a194b/">LinkedIn</a> | <a href="https://github.com/l4nz3r">GitHub</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="certifications"><a class="header" href="#certifications">Certifications</a></h1>
+<p>Throughout my career, I haven't focused heavily on collecting certifications, as I have continually leaned mostly towards hands-on experience and building real-world solutions. However, I have obtained some key certifications that validate my expertise in specific areas, particularly in conversational commerce and networking. I have extensive practical experience working directly with Meta's ecosystem, including WhatsApp, Messenger, and Instagram, as well as specialized knowledge in managing Meta Business Portfolios, Embedded Sign-Up flows, and more.</p>
+<h3 id="meta-whatsapp-for-business-technical-implementation"><a class="header" href="#meta-whatsapp-for-business-technical-implementation">Meta: WhatsApp for Business Technical Implementation</a></h3>
+<p><a href="https://developers.facebook.com/blog/post/2025/08/20/grow-your-business-and-stand-out/">Information about certification</a></p>
+<p>This certification validates my technical capabilities in implementing and managing WhatsApp Business API solutions. My experience goes far beyond the certification itself, as I have spent years integrating and scaling complex conversational flows on WhatsApp, Messenger, and Instagram for enterprise clients. I am highly proficient in navigating the Meta ecosystem, structuring business portfolios, and streamlining client onboarding through Embedded Sign-Up processes.</p>
+<h3 id="cisco-ccna---1--2"><a class="header" href="#cisco-ccna---1--2">Cisco: CCNA - 1 &amp; 2</a></h3>
+<p><a href="https://www.cisco.com/c/en/us/training-events/certifications/associate/ccna.html">Information about certification</a></p>
+<p>While this is an older certification from the early stages of my career, my Cisco Certified Network Associate (CCNA) training provided me with a rock-solid foundation in networking principles. Understanding how routing, switching, and network protocols work at a fundamental level has been invaluable in my current role when architecting distributed microservices, debugging complex network-level issues, and designing resilient cloud infrastructure.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="languages-1"><a class="header" href="#languages-1">Languages</a></h1>
+<p>My native language is Spanish. However, I completed 14 out of 20 modules at the Academia Europea in Guatemala and have continued to develop my English skills throughout my professional career. This allows me to express myself accurately and eloquently, and to communicate seamlessly with people from all over the world.</p>
+<h2 id="languages-2"><a class="header" href="#languages-2">Languages</a></h2>
+<pre><code>(Spanish) Spanish         |.........................................
+(English) English         |.............................
+--------------------------|-----------------------------------------
+Proficiency               0        25        50        75        100
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="interests"><a class="header" href="#interests">Interests</a></h1>
+<p>I am always looking for new things to learn and ways to grow as a professional. My main interest is working with infrastructure and solving complex problems. I really enjoy the idea of building scalable and resilient systems.</p>
+<p>Secondly, I'm very passionate about AI. I am currently exploring the world of Artificial Intelligence to solve real-day problems and automate repetitive tasks on a personal level. Professionally, I continue to work on production-level AI implementations for our products.</p>
+<h2 id="technology-stack--preferences"><a class="header" href="#technology-stack--preferences">Technology Stack &amp; Preferences</a></h2>
+<table><thead><tr><th style="text-align: left">Category</th><th style="text-align: left">My Favorites</th></tr></thead><tbody>
+<tr><td style="text-align: left"><strong>💻 Programming Languages</strong></td><td style="text-align: left">Golang, Python, JavaScript</td></tr>
+<tr><td style="text-align: left"><strong>🧠 AI Tools &amp; Stacks</strong></td><td style="text-align: left">OpenAI, Google Gemini, Cloud Code <em>(In progress, gathering thoughts!)</em></td></tr>
+<tr><td style="text-align: left"><strong>☁️ Cloud Providers</strong></td><td style="text-align: left">Google Cloud Platform (GCP), Amazon Web Services (AWS)</td></tr>
+<tr><td style="text-align: left"><strong>🗄️ Databases</strong></td><td style="text-align: left">PostgreSQL, MongoDB, Redis</td></tr>
+<tr><td style="text-align: left"><strong>📨 Message Brokers</strong></td><td style="text-align: left">Kafka <em>(I have extensive knowledge in this stack and really like it)</em></td></tr>
+<tr><td style="text-align: left"><strong>📊 Observability</strong></td><td style="text-align: left">Datadog, Grafana</td></tr>
+</tbody></table>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+    </body>
+</html>
